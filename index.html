@@ -39,7 +39,16 @@
             <h2>Meu primeiro post</h2>
             <p class="dono-do-blog">Por: Denilso</p> 
             <p>Bem vindo ao meu site, aqui falaremos sobre programação</p>
+            <button>❤️<span>0</span></button>
         </div>
    </main>
 </body>
+<script>
+    const botao = document.querySelector("button");
+    botao.addEventListener("click", botaoClicado);
+    function botaoClicado(){
+        let texto = botao.querySelector("span");
+        texto.textContent++;
+    }
+</script>
 </html>
